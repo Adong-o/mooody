@@ -1,6 +1,6 @@
-# Moodify - Your Mood-Based Music Discovery 🎵
+# Mooody - Your Mood-Based Music Discovery 🎵
 
-Moodify is an innovative web application that transforms your emotions into personalized music recommendations. Using an advanced color psychology system and the YouTube API, it creates an immersive experience where your mood guides you to the perfect soundtrack.
+Mooody is an innovative web application that transforms your emotions into personalized music recommendations. Using an advanced color psychology system and the YouTube API, it creates an immersive experience where your mood guides you to the perfect soundtrack.
 
 ![Moodify Interface](./icon.png)
 
@@ -108,9 +108,9 @@ MIT License - feel free to use this project for personal or commercial purposes.
 
 Have questions or suggestions? Reach out:
 
-- Email: your.email@example.com
-- Twitter: [@YourHandle](https://twitter.com/AdongoJakes)
-- GitHub: [Your Profile](https://github.com/Adong-o)
+- Email: adongojakes@gmail.com
+- Twitter: [Adongo Jakes](https://twitter.com/AdongoJakes)
+- GitHub: [Github](https://github.com/Adong-o)
 
 ---
 

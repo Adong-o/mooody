@@ -2,7 +2,7 @@
 
 Moodify is an innovative web application that transforms your emotions into personalized music recommendations. Using an advanced color psychology system and the YouTube API, it creates an immersive experience where your mood guides you to the perfect soundtrack.
 
-![Moodify Interface](./images/moodify-interface.png)
+![Moodify Interface](./icon.png)
 
 ## ✨ Key Features
 
@@ -30,7 +30,7 @@ Moodify is an innovative web application that transforms your emotions into pers
 
 ## 🚀 Quick Start
 
-1. Visit [Moodify Web App](https://your-moodify-url.com)
+1. Visit [Moodify Web App](https://mooodify.vercel.app)
 2. Select your current mood(s)
 3. Choose number of songs
 4. Get personalized recommendations
@@ -109,8 +109,8 @@ MIT License - feel free to use this project for personal or commercial purposes.
 Have questions or suggestions? Reach out:
 
 - Email: your.email@example.com
-- Twitter: [@YourHandle](https://twitter.com/yourhandle)
-- GitHub: [Your Profile](https://github.com/yourprofile)
+- Twitter: [@YourHandle](https://twitter.com/AdongoJakes)
+- GitHub: [Your Profile](https://github.com/Adong-o)
 
 ---
 

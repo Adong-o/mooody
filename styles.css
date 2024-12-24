@@ -1,0 +1,581 @@
+:root {
+    --primary-color: #2196F3;
+    --primary-dark: #1976D2;
+    --accent-color: #FF4081;
+    --gradient-1: #1a237e;
+    --gradient-2: #311b92;
+    --gradient-3: #004d40;
+    --gradient-4: #b71c1c;
+    --surface-dark: rgba(30, 30, 30, 0.8);
+    --text-primary: rgba(255, 255, 255, 0.87);
+    --text-secondary: rgba(255, 255, 255, 0.6);
+    --spacing-unit: 1rem;
+    /* Extended color palette (40 colors) */
+    --color-1: #1DA1F2;  /* Twitter Blue - Trust */
+    --color-2: #4267B2;  /* Facebook Blue - Reliability */
+    --color-3: #E1306C;  /* Instagram Magenta - Creativity */
+    --color-4: #2867B2;  /* LinkedIn Blue - Professionalism */
+    --color-5: #FF0000;  /* YouTube Red - Excitement */
+    --color-6: #FE2C55;  /* TikTok Red - Youth */
+    --color-7: #7289DA;  /* Discord Purple - Community */
+    --color-8: #FF6B6B;  /* Coral - Energy */
+    --color-9: #00A4EF;   /* Microsoft Blue - Stability */
+    --color-10: #0F9D58;  /* Google Green - Growth */
+    --color-11: #4285F4;  /* Google Blue - Reliability */
+    --color-12: #34A853;  /* Success Green - Achievement */
+    --color-13: #FF9F1C;  /* Warm Orange - Comfort */
+    --color-14: #E4405F;  /* Love Red - Passion */
+    --color-15: #BD081C;  /* Pinterest Red - Inspiration */
+    --color-16: #FF5722;  /* Deep Orange - Confidence */
+    --color-17: #9C27B0;  /* Royal Purple - Luxury */
+    --color-18: #FFD700;  /* Gold - Premium */
+    --color-19: #C0C0C0;  /* Silver - Elegance */
+    --color-20: #B8860B;  /* Dark Golden - Exclusive */
+    --color-21: #FF4444;  /* Urgency Red */
+    --color-22: #00C851;  /* Success Green */
+    --color-23: #33B5E5;  /* Info Blue */
+    --color-24: #FFBB33;  /* Warning Yellow */
+    --color-25: #6200EA;  /* Deep Purple */
+    --color-26: #2962FF;  /* Deep Blue */
+    --color-27: #00BFA5;  /* Teal */
+    --color-28: #00C853;  /* Success Green */
+    --color-29: #FF6B6B;  /* Soft Red */
+    --color-30: #4ECDC4;  /* Soft Teal */
+    --color-31: #45B7D1;  /* Ocean Blue */
+    --color-32: #96CEB4;  /* Sage */
+    --color-33: #FFBE0B;  /* Sunshine */
+    --color-34: #FB5607;  /* Orange */
+    --color-35: #FF006E;  /* Pink */
+    --color-36: #8338EC;  /* Purple */
+    --color-37: #FF1744;  /* Red A400 */
+    --color-38: #00E676;  /* Green A400 */
+    --color-39: #00E5FF;  /* Cyan A400 */
+    --color-40: #FFEA00;  /* Yellow A400 */
+    --color-41: #FF3D00;  /* Deep Orange A400 */
+    --color-42: #00B0FF;  /* Light Blue A400 */
+    --color-43: #651FFF;  /* Deep Purple A400 */
+    --color-44: #C51162;  /* Pink A700 */
+    --color-45: #FF3366;  /* Buy Now Red */
+    --color-46: #2ECC71;  /* Success Green */
+    --color-47: #3498DB;  /* Action Blue */
+    --color-48: #F1C40F;  /* Attention Yellow */
+    --color-49: #1ABC9C;  /* Turquoise */
+    --color-50: #9B59B6;  /* Amethyst */
+    --color-51: #E74C3C;  /* Alizarin */
+    --color-52: #2980B9;  /* Belize Hole */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background: linear-gradient(
+        -45deg,
+        var(--color-1),
+        var(--color-7),
+        var(--color-13),
+        var(--color-19)
+    );
+    background-size: 400% 400%;
+    animation: gradientFlow 15s ease infinite;
+    min-height: 100vh;
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Smooth gradient animation */
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.05)
+    );
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: containerGlow 8s infinite;
+}
+
+/* Header Styling */
+header {
+    background: var(--surface-dark);
+    padding: 0.75rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* Mood Selector Styling */
+.mood-selector {
+    margin-top: 1rem;
+    background: linear-gradient(
+        135deg,
+        rgba(var(--current-color-1), 0.1),
+        rgba(var(--current-color-2), 0.15),
+        rgba(var(--current-color-3), 0.1)
+    );
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+    transition: background 2s ease;
+    animation: moodSelectorGlow 15s infinite;
+}
+
+.mood-selector h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.mood-category {
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.05)
+    );
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, background 1.5s ease;
+    background-size: 200% 200%;
+    animation: subtleFlow 10s ease infinite;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.mood-category:hover {
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.08),
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0.08)
+    );
+}
+
+.category-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mood-tags {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.8rem;
+}
+
+.mood-tag {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+    user-select: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mood-tag:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.mood-tag.selected {
+    background: linear-gradient(
+        45deg,
+        var(--primary-color),
+        var(--primary-dark),
+        var(--accent-color)
+    );
+    background-size: 200% 200%;
+    animation: tagFlow 3s ease infinite;
+    color: white;
+    border: none;
+    box-shadow: 0 0 15px rgba(33, 150, 243, 0.5);
+}
+
+@keyframes tagFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Controls Styling */
+.controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.song-count {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 40px;
+    width: auto;
+    min-width: 250px;
+}
+
+input[type="number"] {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 0.4rem;
+    color: var(--text-primary);
+    width: 60px;
+    text-align: center;
+    height: 28px;
+}
+
+button {
+    background: linear-gradient(
+        45deg,
+        var(--primary-color),
+        var(--primary-dark),
+        var(--accent-color)
+    );
+    background-size: 200% 200%;
+    animation: buttonFlow 3s ease infinite;
+    color: white;
+    padding: 0 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+    width: auto;
+    min-width: 180px;
+    font-size: 0.9rem;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4);
+}
+
+button i {
+    font-size: 1rem;
+}
+
+#getSongs {
+    background: var(--primary-color);
+}
+
+.reset-button {
+    background: linear-gradient(
+        45deg,
+        var(--accent-color),
+        #e91e63,
+        #ff5252
+    );
+    background-size: 200% 200%;
+    animation: resetFlow 3s ease infinite;
+    color: white;
+    padding: 0 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+    width: auto;
+    min-width: 180px;
+    font-size: 0.9rem;
+}
+
+.reset-button:hover {
+    box-shadow: 0 4px 15px rgba(255, 64, 129, 0.4);
+}
+
+/* Results Styling */
+.results {
+    background: var(--surface-dark);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+#songList {
+    list-style: none;
+}
+
+#songList li {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+#songList li:hover {
+    transform: translateX(8px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.song-links {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.song-link {
+    padding: 0.5rem;
+    border-radius: 6px;
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+}
+
+.song-link.music {
+    background: rgba(33, 150, 243, 0.2);
+}
+
+.song-link.video {
+    background: rgba(255, 64, 129, 0.2);
+}
+
+.song-link:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.2);
+}
+
+/* Loading States */
+.loading-message {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .mood-tags {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    .controls {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #songList li {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .song-links {
+        align-self: flex-end;
+    }
+
+    .song-count, 
+    button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Animation keyframes */
+@keyframes subtleFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes buttonFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes resetFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Enhanced glow effects */
+.mood-tag.selected {
+    box-shadow: 0 0 15px rgba(33, 150, 243, 0.5);
+    animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(33, 150, 243, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+    }
+}
+
+/* Add hover effects */
+.mood-tag:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4);
+}
+
+.reset-button:hover {
+    box-shadow: 0 4px 15px rgba(255, 64, 129, 0.4);
+}
+
+/* Add this JavaScript to handle mood selection color changes */
+
+/* Add these animations */
+@keyframes containerGlow {
+    0% { box-shadow: 0 0 20px rgba(var(--color-1), 0.3); }
+    25% { box-shadow: 0 0 20px rgba(var(--color-7), 0.3); }
+    50% { box-shadow: 0 0 20px rgba(var(--color-13), 0.3); }
+    75% { box-shadow: 0 0 20px rgba(var(--color-19), 0.3); }
+    100% { box-shadow: 0 0 20px rgba(var(--color-1), 0.3); }
+}
+
+.mood-tag.selected {
+    animation: selectedPulse 2s infinite;
+}
+
+@keyframes selectedPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Enhanced hover effects */
+.mood-tag:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Smooth transitions */
+.mood-tag, .container, button {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Smooth gradient transitions */
+@keyframes moodSelectorGlow {
+    0%, 100% {
+        background: linear-gradient(
+            135deg,
+            rgba(255, 107, 107, 0.1),  /* color-1 */
+            rgba(155, 93, 229, 0.15),   /* color-7 */
+            rgba(0, 194, 168, 0.1)      /* color-13 */
+        );
+    }
+    33% {
+        background: linear-gradient(
+            135deg,
+            rgba(241, 91, 181, 0.1),    /* color-8 */
+            rgba(0, 187, 249, 0.15),    /* color-9 */
+            rgba(255, 133, 234, 0.1)    /* color-12 */
+        );
+    }
+    66% {
+        background: linear-gradient(
+            135deg,
+            rgba(114, 9, 183, 0.1),     /* color-15 */
+            rgba(67, 97, 238, 0.15),    /* color-17 */
+            rgba(247, 37, 133, 0.1)     /* color-19 */
+        );
+    }
+}
+
+/* Smoother transitions for all elements */
+.mood-selector,
+.mood-category,
+.mood-tag,
+.container,
+button {
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}

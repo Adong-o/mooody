@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mooody - Music for Every Mood</title>
+    <link rel="icon" href="./icon.png" type="image/png">
+    <meta name="description" content="Discover the perfect song for every mood with Moodi. Our AI-powered mood-based music recommendation system helps you find the right song for any occasion.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mooody</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="mood-selector">
+            <h2>How are you feeling today?</h2>
+            <div id="moodTags"></div>
+
+            <div class="controls">
+                <div class="song-count">
+                    <label for="songCount">Songs to display:</label>
+                    <input type="number" id="songCount" min="1" max="50" value="10">
+                </div>
+
+                <button id="getSongs">
+                    <i class="fas fa-music"></i>
+                    Get Recommendations
+                </button>
+
+                <button id="resetSongs" class="reset-button">
+                    <i class="fas fa-redo"></i>
+                    Reset
+                </button>
+            </div>
+        </div>
+
+        <div class="results" id="results">
+            <h3>Your Recommended Songs <span id="totalSongs"></span></h3>
+            <ul id="songList"></ul>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
